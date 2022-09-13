@@ -1,9 +1,9 @@
-import { FC } from 'react'
-import Link from 'next/link'
 import { useQuery } from '@apollo/client'
+import Link from 'next/link'
+import { FC } from 'react'
+import { Layout } from '../components/Layout'
 import { GET_USERS } from '../queries/queries'
 import { GetUsersQuery } from '../types/generated/graphql'
-import { Layout } from '../components/Layout'
 
 const FetchMain: FC = () => {
   const { data, error } = useQuery<GetUsersQuery>(GET_USERS, { fetchPolicy: 'network-only' })

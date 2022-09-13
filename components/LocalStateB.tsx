@@ -1,6 +1,6 @@
-import { FC } from 'react'
 import { useReactiveVar } from '@apollo/client'
 import Link from 'next/link'
+import { FC } from 'react'
 
 import { todoVar } from '../cache'
 

@@ -1,6 +1,6 @@
-import { ChangeEvent, FormEvent, useState, FC } from 'react'
 import { useReactiveVar } from '@apollo/client'
 import Link from 'next/link'
+import { ChangeEvent, FormEvent, useState, FC } from 'react'
 
 import { todoVar } from '../cache'
 export const LocalStateA: FC = () => {
