@@ -6,7 +6,7 @@ import { GetUsersQuery } from '../types/generated/graphql'
 import { Layout } from '../components/Layout'
 
 const FetchMain: FC = () => {
-  const { data, error } = useQuery<GetUsersQuery>(GET_USERS)
+  const { data, error } = useQuery<GetUsersQuery>(GET_USERS, { fetchPolicy: 'network-only' })
 
   if (error)
     return (
